@@ -389,12 +389,125 @@
       text-transform: lowercase;
     }
 
-    /* Mobile: keep email on one line */
+    /* Mobile: specific adjustments */
     @media (max-width: 600px) {
+      /* Center the navigation links */
+      .header-flex {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+
+      /* Email button – two lines: icon on top, email below */
       .cta-section .btn-primary {
-        font-size: 0.85rem;
-        padding: 0.7rem 1rem;
-        white-space: nowrap;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
+        white-space: normal;
+        text-transform: lowercase;
+        gap: 0.4rem;
+      }
+
+      .cta-section .btn-primary i {
+        margin-right: 0;
+        margin-bottom: 0.2rem;
+        font-size: 1.2rem;
+      }
+
+      /* Mobile hero adjustments */
+      .hero {
+        padding: 4rem 0 5rem;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+
+      .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+        border-left: none;
+        border-top: 3px solid #e63946;
+        padding-left: 0;
+        padding-top: 1.5rem;
+      }
+
+      .hero-content h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero-visual {
+        padding: 1.5rem;
+      }
+
+      /* Section title */
+      .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+      }
+
+      /* Expertise cards with side margins so they don't touch edges */
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 0.5rem;
+      }
+
+      .service-card {
+        padding: 1.5rem;
+        margin: 0;
+      }
+
+      .expertise-tagline {
+        font-size: 1.1rem;
+        padding: 1.2rem 1rem;
+        margin-top: 2.5rem;
+      }
+
+      /* CTA section */
+      .cta-section {
+        padding: 4rem 1.5rem 3rem;
+      }
+
+      .cta-section h2 {
+        font-size: 2.5rem;
+      }
+
+      .cta-section p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .location-partner {
+        margin-top: 2rem;
+      }
+
+      .location-badge, .partner-badge-fancy {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+      }
+
+      /* Footer */
+      .footer-flex {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .capability-icons {
+        gap: 1rem;
       }
     }
 
@@ -466,13 +579,6 @@
 
     @media (max-width: 900px) {
       .hero-grid { grid-template-columns: 1fr; }
-    }
-
-    @media (max-width: 600px) {
-      .services-grid { grid-template-columns: 1fr; }
-      .section-title { font-size: 2.5rem; }
-      .footer-flex { flex-direction: column; text-align: center; }
-      .capability-icons { gap: 1rem; }
     }
   </style>
 </head>

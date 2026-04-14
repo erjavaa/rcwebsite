@@ -176,6 +176,16 @@
       left: 0;
     }
 
+    /* Home anchor at very top */
+    #home-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 1px;
+      visibility: hidden;
+    }
+
     section {
       scroll-margin-top: 85px;
     }
@@ -403,23 +413,23 @@
         gap: 1.5rem;
       }
 
-      /* Email button – two lines: icon on top, email below */
+      /* Email button – two lines, minimal padding */
       .cta-section .btn-primary {
         display: inline-flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         font-size: 0.9rem;
-        padding: 0.8rem 1.5rem;
+        padding: 0.4rem 1.2rem;
         white-space: normal;
         text-transform: lowercase;
-        gap: 0.4rem;
+        gap: 0.3rem;
       }
 
       .cta-section .btn-primary i {
         margin-right: 0;
-        margin-bottom: 0.2rem;
-        font-size: 1.2rem;
+        margin-bottom: 0;
+        font-size: 1.1rem;
       }
 
       /* Mobile hero adjustments */
@@ -459,9 +469,9 @@
         margin-bottom: 2.5rem;
       }
 
-      /* Expertise cards with side margins so they don't touch edges */
+      /* Expertise cards – always single column with side margins */
       .services-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 1.5rem;
         padding: 0 0.5rem;
       }
@@ -584,11 +594,14 @@
 </head>
 <body>
 
+<!-- Hidden anchor for absolute top -->
+<div id="home-top"></div>
+
 <header>
   <div class="container header-flex">
     <div class="logo">Redstream Consulting</div>
     <nav class="nav-links">
-      <a href="#home">Home</a>
+      <a href="#home-top">Home</a>
       <a href="#expertise">Expertise</a>
       <a href="#contact">Contact</a>
     </nav>

@@ -381,11 +381,21 @@
       margin-bottom: 3rem;
     }
 
-    /* ----- FIX: Email button wraps on mobile ----- */
+    /* Email button base */
     .cta-section .btn-primary {
       white-space: normal;
       word-break: break-word;
       max-width: 100%;
+      text-transform: lowercase;
+    }
+
+    /* Mobile: keep email on one line */
+    @media (max-width: 600px) {
+      .cta-section .btn-primary {
+        font-size: 0.85rem;
+        padding: 0.7rem 1rem;
+        white-space: nowrap;
+      }
     }
 
     .location-partner {

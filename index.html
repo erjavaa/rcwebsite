@@ -419,14 +419,14 @@
         gap: 1.5rem;
       }
 
-      /* Email button – horizontal padding removed, font size matches location */
+      /* Email button – modest horizontal padding for breathing room */
       .cta-section .btn-primary {
         display: inline-flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: 0.9rem;            /* matches location badge */
-        padding: 0.2rem 0;
+        font-size: 0.9rem;
+        padding: 0.2rem 0.5rem;        /* added 0.5rem left/right */
         white-space: normal;
         text-transform: lowercase;
         gap: 0.2rem;
@@ -670,6 +670,11 @@
         <p>End‑to‑end technical architecture for Dynamics 365, ensuring performance, scalability, and seamless integration.</p>
       </div>
       <div class="service-card">
+        <div class="service-icon"><i class="fas fa-robot"></i></div>
+        <h3>AI & Agents</h3>
+        <p>Copilot Studio, AI Builder, autonomous agents, and Dynamics 365 MCP that streamline enterprise workflows.</p>
+      </div>
+      <div class="service-card">
         <div class="service-icon"><i class="fas fa-plug"></i></div>
         <h3>Dual‑write & Integrations</h3>
         <p>Master Dual‑write, OData, Data Management Package API, and custom services for enterprise integrations for Dynamics 365 and Dataverse.</p>
@@ -678,11 +683,6 @@
         <div class="service-icon"><i class="fas fa-code"></i></div>
         <h3>Low‑code & Pro‑code</h3>
         <p>Power Platform and X++ extensions. Low‑code agility combined with clean pro‑code for greater Dynamics 365 customizations to your processes.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-robot"></i></div>
-        <h3>AI & Agents</h3>
-        <p>Copilot Studio, AI Builder, autonomous agents, and Dynamics 365 MCP that streamline enterprise workflows.</p>
       </div>
       <div class="service-card">
         <div class="service-icon"><i class="fas fa-database"></i></div>
@@ -704,7 +704,7 @@
     <div class="container">
       <h2>Ready to <span class="gradient-text">transform</span> your ERP?</h2>
       <p>Let's discuss your Dynamics 365 roadmap</p>
-      <a href="mailto:info@redstreamconsulting.se" class="btn-primary" style="font-size: 1rem; padding: 1rem 0;">
+      <a href="mailto:info@redstreamconsulting.se" class="btn-primary" style="font-size: 1rem; padding: 1rem 1rem;">
         <i class="fas fa-envelope"></i> info@redstreamconsulting.se
       </a>
       
